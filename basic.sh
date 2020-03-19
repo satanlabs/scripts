@@ -109,7 +109,7 @@ Dump data from DB to file
 $>  mysqldump -u [uname] -p[pass] db_name > db_backup.sql
 
 add data from file into DB
-$> 
+$>   mysql -u [uname] -p[pass] db_name < db_backup.sql 
 
 
 //record everything in terminal 
