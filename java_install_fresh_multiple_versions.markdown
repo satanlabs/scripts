@@ -43,9 +43,7 @@
 
     A.
         ``` 
-
         $ java -version
-
         ````
         ( it should return version 8 )
 
