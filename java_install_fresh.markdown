@@ -60,15 +60,15 @@
     $ source .bashrc
 ```
 10. To verify finally run : 
-```
-    $ java -version
-```
+
+``` $ java -version ```
+
     RESULT : 
-    ```
+```
     java version "1.8.0_251"
     Java(TM) SE Runtime Environment (build 1.8.0_251-b08)
     Java HotSpot(TM) 64-Bit Server VM (build 25.251-b08, mixed mode)
-    ```
+```
 
 ===== EOD ======
 
