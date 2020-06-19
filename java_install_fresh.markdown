@@ -1,6 +1,6 @@
 # install java-oracle ( linux , ubuntu OR maybe mac )
 
-## These steps are good for single version of Java.
+## These steps are good for a single version of Java.
 
 
 
