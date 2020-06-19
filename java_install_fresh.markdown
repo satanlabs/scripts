@@ -4,10 +4,11 @@
 
 1. ``maybe`` remove the openjdk(s).
 
+```
     $ sudo apt-get --purge remove openjdk-8-jdk
     
     $ sudo apt-get purge openjdk*
-
+```
 2. Download the required jdk-version from the official-webiste ( recommended ).
 
 3. Extract the download. 
@@ -29,19 +30,19 @@
    > Let us choose `/usr/lib/` .
 
 5. Go to `/usr/lib/` and create a directory `jdk`.
-
+```
      $ cd /usr/lib/
 
      $ mkdir jdk
-
+```
 6. Then in `jdk` folder, copy the extracted-jdk ( from step 3 ).
-
+```
     $ cp -r /jdk/dir/folder/  /usr/lib/jdk/
-
+```
 7. Verify the succesful copy by running .It should return the required version of java ( you dowloaded ).
-
+```
     $ /usr/lib/jdk/<jdk-folder-name>/bin/java -version
- 
+```
 8. Open ~/.bashrc file (present in home-dir) ( using vim or nano ) and the following data in the end :
 
     Here, I used `jdk1.8.0_251` folder.
@@ -55,13 +56,13 @@
     ```
 
 9. Save `.bashrc` file and reload it by : 
-
+```
     $ source .bashrc
-
+```
 10. To verify finally run : 
-
+```
     $ java -version
-
+```
     RESULT : 
     ```
     java version "1.8.0_251"
