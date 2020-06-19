@@ -59,7 +59,7 @@
 
 9. Save `.bashrc` file and reload it by : 
 ```
-    $ source .bashrc
+    $ source ~/.bashrc
 ```
 10. To verify finally run : 
 
