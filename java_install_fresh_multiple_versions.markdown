@@ -64,7 +64,7 @@
         ( all commands should return their respective versions. )
 
 
-        ( PS : `$`-dollar before `JAVA_9_HOME` is reqired as you are accessing an environment variable.
+        ( PS : `$`(dollar-sign) before `JAVA_9_HOME` is reqired, as you are accessing an environment variable.
 
 
 ========= EOD ========
