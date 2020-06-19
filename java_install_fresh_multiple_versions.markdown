@@ -41,27 +41,30 @@
 
 7. Verify install by running : 
 
-A.
-``` 
+    A.
+        ``` 
 
-$ java -version
+        $ java -version
 
-````
-( it should return version 8 )
+        ````
+        ( it should return version 8 )
 
-B.
-```
+    B.
+        ```
 
-$ `$JAVA_6_HOME/bin/java -version`
+        $ ` $JAVA_6_HOME/bin/java -version `
 
-$ `$JAVA_7_HOME/bin/java -version`
+        $ ` $JAVA_7_HOME/bin/java -version `
 
-$ `$JAVA_8_HOME/bin/java -version`
+        $ ` $JAVA_8_HOME/bin/java -version `
 
-$ `$JAVA_9_HOME/bin/java -version`
+        $ ` $JAVA_9_HOME/bin/java -version `
 
-```
-( all commands should return their respective versions. )
+        ```
+        ( all commands should return their respective versions. )
+
+
+        ( PS : `$`-dollar before `JAVA_9_HOME` is reqired as you are accessing an environment variable.
 
 
 ========= EOD ========
