@@ -1,6 +1,8 @@
-# install java-oracle 
+# install java-oracle ( linux , ubuntu OR maybe mac )
 
-( linux , ubuntu OR maybe mac )
+## These steps are good for single version of Java.
+
+
 
 1. ``maybe`` remove the openjdk(s).
 
