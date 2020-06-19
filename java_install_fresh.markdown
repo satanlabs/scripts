@@ -61,7 +61,9 @@
 ```
 10. To verify finally run : 
 
-``` $ java -version ```
+``` 
+    $ java -version 
+```
 
 > RESULT : 
 
