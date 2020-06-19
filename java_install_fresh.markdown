@@ -24,7 +24,7 @@
 
 4. Go to the desired directory, where you want to keep the extracted-jdk. 
 
-    Eg : `/usr/bin` OR `/opt/` OR `/usr/lib/` OR it can be literlly any-place in file-system.
+    Eg : `/usr/bin` OR `/opt/` OR `/usr/lib/` OR it can be literally any-place in the file-system.
 
     Let us choose `/usr/lib/`
 
