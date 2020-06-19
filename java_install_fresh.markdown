@@ -1,6 +1,6 @@
 # install java-oracle 
 
-( linux , ubuntu , MAY be mac )
+( linux , ubuntu OR maybe mac )
 
 1. ``maybe`` remove the openjdk(s).
 
