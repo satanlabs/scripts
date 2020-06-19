@@ -42,7 +42,11 @@
 7. Verify install by running : 
 
     A.
-        ``` $ java -version ````
+        ``` 
+        
+        $ java -version
+        
+        ````
         ( it should return version 8 )
 
     B.
