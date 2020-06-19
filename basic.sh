@@ -184,5 +184,7 @@ $ wget -O file_"$(date +%s)".html satanlabs.com
 //change owner of a file/folder
 $ chown _some_username_ /dir/to/file/ 
 
-
+// uninstall remove purge application(s)
+$ sudo apt-get --purge remove openjdk-8-jdk
+$ sudo apt-get purge openjdk*
 
