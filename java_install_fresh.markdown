@@ -26,7 +26,7 @@
 
     Eg : `/usr/bin` OR `/opt/` OR `/usr/lib/` OR it can be literally any-place in the file-system.
 
-    Let us choose `/usr/lib/`
+   > Let us choose `/usr/lib/`
 
 5. Go to `/usr/lib/` and create a directory `jdk`.
 
