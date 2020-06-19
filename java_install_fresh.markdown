@@ -13,9 +13,13 @@
 3. Extract the download. 
 
     ( 
+    
       for zip    : ` $ unzip some_file.zip`
+      
       for bin    : ` $ unzip some_file.bin` ( version 6 or less are different packages )
+      
       for tar.gz : ` $ tar -xvzf some_file.tar.gz`
+      
     )
 
 4. Go to the desired directory, where you want to keep the extracted-jdk. 
