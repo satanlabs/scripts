@@ -179,7 +179,8 @@ $ wget -O custom.zip http://example.com/some.zip
 //run one command into another
 
 $ wget -O file_"$(date +%s)".html satanlabs.com
-
+$ echo `date`
+$ echo `whoami`
 
 //change owner of a file/folder
 $ chown _some_username_ /dir/to/file/ 
