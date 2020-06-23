@@ -86,10 +86,7 @@ $> du -hs *
 //see the dir size
 $> du -hs .
 
-//see disk size
-$ df -h
 
-$ lsblk
 
 
 //see cpu info
@@ -161,6 +158,9 @@ $> sudo apt-get install --only-upgrade <packagename>
 
 //see disk free / used space
 $> df -h
+
+//list of storages
+$ lsblk
 
 // print all or part of environment
 $> printenv
