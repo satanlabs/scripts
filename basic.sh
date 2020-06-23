@@ -86,6 +86,11 @@ $> du -hs *
 //see the dir size
 $> du -hs .
 
+//see disk size
+$ df -h
+
+$ lsblk
+
 
 //see cpu info
 $> lscpu
@@ -93,6 +98,7 @@ $> lscpu
 //see ram info
 $> free --mega
 $> free -h
+$ vmstat -s
 
 //see cpu usage and top processes
 $> top
