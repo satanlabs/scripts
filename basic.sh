@@ -165,6 +165,9 @@ $ lsblk
 // print all or part of environment
 $> printenv
 
+// find the home of apps , where to find the apps ( eg : you want to find where is java application )
+$ echo $PATH
+
 //find something in a command's output, can be used with history
 $ echo apple | grep "app"
 $history | grep "startup"
