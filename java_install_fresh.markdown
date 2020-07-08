@@ -11,7 +11,7 @@
     
     $ sudo apt-get purge openjdk*
 ```
-2. Download the required jdk-version from the official-webiste ( recommended ).
+2. Download the required jdk-version from the official-website ( recommended ).
 
 3. Extract the download. 
 
@@ -19,7 +19,7 @@
     
       for zip    : ` $ unzip some_file.zip`
       
-      for bin    : ` $ unzip some_file.bin` ( version 6 or less are different packages )
+      for bin    : ` $ unzip some_file.bin`
       
       for tar.gz : ` $ tar -xvzf some_file.tar.gz`
       
