@@ -7,7 +7,7 @@ $ git log -p <filename>
 ###### conflict-resolving #######
  Lets say we want to put code from Branch `feature-x` into the `dev` , and there's a conflict.
  
- dev => master
+ feature-x => dev
   
  Then , 
  1. $ git pull
