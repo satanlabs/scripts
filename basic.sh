@@ -198,3 +198,10 @@ $ chown _some_username_ /dir/to/file/
 $ sudo apt-get --purge remove openjdk-8-jdk
 $ sudo apt-get purge openjdk*
 
+// split a file
+$  split some_file.txt
+$  split -l 300 some_file.txt
+$  split -l 300 some_file.txt --verbose
+
+
+
