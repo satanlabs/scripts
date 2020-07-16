@@ -1,5 +1,8 @@
 
 # go to AWS official page ( for more info ) : ( version 1 and 2 )
+
+https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
+
 # HERE we are installing Version-2.
 
  $ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
