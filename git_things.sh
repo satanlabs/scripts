@@ -1,5 +1,7 @@
 #### some git useful commands
 
+# see chnages/status of repo. till a particular commit
+$ git commit <hash_of_commit>
 
 # see history of a file ( in a  particular branch )
 $ git log -p <filename>
@@ -21,6 +23,8 @@ $ git log -p <filename>
  5. Push changes to `feature-x`.
  
  #################################
+ 
+ 
  
  
  
