@@ -192,7 +192,8 @@ $ echo `date`
 $ echo `whoami`
 
 //change owner of a file/folder
-$ chown _some_username_ /dir/to/file/ 
+$ chown _some_username_ /dir/to/file/
+$ chown someUser:someGroup /dir/to/file/
 
 // uninstall remove purge application(s)
 $ sudo apt-get --purge remove openjdk-8-jdk
