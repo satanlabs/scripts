@@ -203,5 +203,17 @@ $  split some_file.txt
 $  split -l 300 some_file.txt
 $  split -l 300 some_file.txt --verbose
 
+// create new user
+$ sudo adduser someUsername
+
+// create password for a user
+$ sudo passwd someUsername
+
+// make a user sudoer
+$ usermod -aG sudo username
+
+//login as another user ( if you have the priviledge )
+$ su - someUsername
+
 
 
