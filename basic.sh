@@ -191,6 +191,13 @@ $ wget -O file_"$(date +%s)".html satanlabs.com
 $ echo `date`
 $ echo `whoami`
 
+// print/use env. variables in command
+#!/bin/bash          
+STR="Hello World!"
+echo $STR
+echo "hello from dko ($STR)"
+
+
 //change owner of a file/folder
 $ chown _some_username_ /dir/to/file/
 $ chown someUser:someGroup /dir/to/file/
