@@ -192,10 +192,10 @@ $ echo `date`
 $ echo `whoami`
 
 // print/use env. variables in command
-#!/bin/bash          
-STR="Hello World!"
+#!/bin/bash
+STR="John Singh"
 echo $STR
-echo "hello from dko ($STR)"
+echo "hello from $STR"
 
 
 //change owner of a file/folder
