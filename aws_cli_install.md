@@ -22,10 +22,12 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
  
  Extra steps : 
  //( to verify )
+ 
  $ aws s3 ls
  
  
  //to copy data to s3 
+ 
  $ aws s3 cp /some/folder/ s3://some-bucker --recursive 
  
  
