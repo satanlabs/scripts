@@ -20,7 +20,8 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
  (follow steps )
  
  
- Extra steps : 
+ # Extra steps : 
+ 
  //( to verify )
  
  $ aws s3 ls
