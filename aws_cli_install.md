@@ -1,5 +1,5 @@
 
-# go to AWS official page ( for more info ) : ( version 1 and 2 )
+# Go to AWS official page ( for more info ) : ( version 1 and 2 )
 
 https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
 
@@ -24,13 +24,12 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
  
  //to list all buckets 
  
- $ aws s3 ls
- 
+ `$ aws s3 ls`
  
  //to copy data to s3 
  
- $ aws s3 cp /some/folder/ s3://some-bucket --recursive 
+ `$ aws s3 cp /some/folder/ s3://some-bucket --recursive`
  
  //to list list of all contents in an s3-bucket
  
- $ aws s3 ls s3://some-bucket
+ `$ aws s3 ls s3://some-bucket`
