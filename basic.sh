@@ -223,5 +223,6 @@ $ usermod -aG sudo username
 //login as another user ( if you have the priviledge )
 $ su - someUsername
 
-
+// change time-zone of the machine to IST
+$ sudo timedatectl set-timezone Asia/Kolkata
 
