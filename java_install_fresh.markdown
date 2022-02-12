@@ -11,7 +11,13 @@
     
     $ sudo apt-get purge openjdk*
 ```
-2. Download the required jdk-version from the official-website ( recommended ).
+2. Download the required jdk-version from the official-website ( maybe Oracle ).
+
+    - make sure you download the file that fits your machine's CPU's architecture.
+
+        - Most CPUs are now 64bit (with x86 architecure) 
+
+        - Example file name : `jdk-8u311-linux-x64.tar.gz` (for Linux x64 machines)
 
 3. Extract the download. 
 

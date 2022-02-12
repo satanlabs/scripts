@@ -2,7 +2,9 @@
 
 ## These steps are good if you want to have/use multiple versions of Java.
 
-1. Download the required version(s) of Java-JDK you want ( from oracle-website )
+1. Download the required version(s) of Java-JDK from official websites (maybe oracle)
+ 
+    - #### IMPORTANT : make sure you download the file that fits your machine's CPU's architecture.
 
     ```
         Eg : 

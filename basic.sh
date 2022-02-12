@@ -226,3 +226,9 @@ $ su - someUsername
 // change time-zone of the machine to IST
 $ sudo timedatectl set-timezone Asia/Kolkata
 
+// do something forever and in intervals
+$ while true ; do ; curl g.co ; sleep 10 ; done
+
+//telnet cmd. for check if port is reachable (and reposonding)
+$ telnet satanlabs.com 3305
+
