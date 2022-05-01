@@ -232,3 +232,12 @@ $ while true ; do ; curl g.co ; sleep 10 ; done
 //telnet cmd. for check if port is reachable (and reposonding)
 $ telnet satanlabs.com 3305
 
+/************ NOHUP *************/
+//nohup -> run program in background (and kill it)
+
+$ nohup some_cmd &
+//it will give a PID
+//you can kill that process by :
+$ kill -9 PID
+
+/****************************/
