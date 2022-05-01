@@ -223,14 +223,14 @@ $ usermod -aG sudo username
 //login as another user ( if you have the priviledge )
 $ su - someUsername
 
-// change time-zone of the machine to IST
+// change timezone of the machine to IST
 $ sudo timedatectl set-timezone Asia/Kolkata
 
 // do something forever and in intervals
 $ while true ; do ; curl g.co ; sleep 10 ; done
 
-//telnet cmd. for check if port is reachable (and reposonding)
-$ telnet satanlabs.com 3305
+//telnet cmd. for check if a port is reachable (and reposonding)
+$ telnet satanlabs.com 4805
 
 /************ NOHUP *************/
 //nohup -> run program in background (and kill it)
