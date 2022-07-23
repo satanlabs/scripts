@@ -227,7 +227,10 @@ $ su - someUsername
 $ sudo timedatectl set-timezone Asia/Kolkata
 
 // do something forever and in intervals
+// linux
 $ while true ; do ; curl g.co ; sleep 10 ; done
+//mac
+$ while true ; do curl g.co ; sleep 10 ; done
 
 //telnet cmd. for check if a port is reachable (and reposonding)
 $ telnet satanlabs.com 4805
