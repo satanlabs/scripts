@@ -244,3 +244,13 @@ $ nohup some_cmd &
 $ kill -9 PID
 
 /****************************/
+
+//sha-256 hash calculate
+//mac
+$ shasum -a 256 someFile.txt
+
+//ubuntu
+$ 
+/****************************/
+
+
