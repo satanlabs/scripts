@@ -27,7 +27,7 @@ grep -r  "someText" *
 find /home/ubuntu/Desktop -name *someFile.jsp*
 
 
-
+===== SCP things ====-
 
 //secure - copy file to ssh 
 scp someFile.txt userX@192.168.1.10:/temp/apple/
@@ -41,12 +41,18 @@ scp userX@192.168.1.10:/temp/apple/some.txt /some/dir/
 //secure -copy folder from ssh 
 scp userX@192.168.1.10:/temp/apple/ /some/dir/
 
-// scp file from server to local via pem key
+// scp file from server to local using pem key
 scp -i example-key.pem ubuntu@example.com:/home/john/Desktop/some.txt /some/local/dir/
 
-
-// scp folder from server to local via pem key
+// scp folder/recursively from server to local using pem key
 scp -r -i example-key.pem ubuntu@example.com:/home/john/Desktop/samples/ /some/local/dir/
+
+// scp file from local to server using pem key
+scp -i example-key.pem /some/local/dir/ ubuntu@example.com:/home/john/Desktop/some.txt
+
+// scp folder/recursively from local to server using pem key
+scp -r -i example-key.pem /some/local/dir/ ubuntu@example.com:/home/john/Desktop/samples/ 
+
 
 
 //copy locally
