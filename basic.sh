@@ -259,4 +259,16 @@ $ shasum -a 256 someFile.txt
 $ 
 /****************************/
 
+ls related things - ls aka `list directory contents`
 
+//for seeing a list, of all items (zeroth level), with size in human-readable format
+$ ls -lah 
+
+//helps printing all of the files anf folder till 1st level ( 0th + 1st level)
+$ ls -lah *
+//similarly to see 2nd level files : caution ⚠️ : this can be a deceiving view
+$ ls -lah */*
+
+
+
+~~
