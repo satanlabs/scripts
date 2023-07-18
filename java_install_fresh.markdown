@@ -11,11 +11,12 @@
     
     $ sudo apt-get purge openjdk*
 ```
-2. Download the required jdk-version from the official-website ( maybe Oracle ).
+2. Download the required jdk-version from the official-website ( maybe from `Oracle` OR `amazon` OR `openJDK` ).
 
-    - make sure you download the file that fits your machine's CPU's architecture.
+    - **make sure you download the file that fits your machine's CPU's architecture.**
 
-        - Most CPUs are now 64bit (with x86 architecure) 
+        - Most CPUs are now 64bit (with x86 architecure)
+            - caution : some cloud-infra are now running on `Aarch-64` architecure. You need to download JDK for thar specific architecture.
 
         - Example file name : `jdk-8u311-linux-x64.tar.gz` (for Linux x64 machines)
 
