@@ -1,7 +1,20 @@
 #!/bin/bash
 
-openAutomatically='YES'
-echo "Hello START ~ $(date)"
+## this script will run automatically IFF openAutomatically = YES 
+echo "Hello, START ~ $(date)"
+
+for ARGUMENT in "$@"
+do
+   KEY=$(echo $ARGUMENT | cut -f1 -d=)
+
+   KEY_LENGTH=${#KEY}
+   VALUE="${ARGUMENT:$KEY_LENGTH+1}"
+
+   export "$KEY"="$VALUE"
+done
+
+openAutomatically=$OPEN_AUTOMATICALLY
+echo "openAutomatically ? ->$openAutomatically<-"
 
 userResponseYes='y'
 userResponseNo='n'
@@ -23,10 +36,10 @@ function openApp() {
 
 	if [[ $shouldOpen = $userResponseYes ]]
 		then 
-			open -a "/Applications/$2.app" && echo "opened $1"
+			open -a "/Applications/$2.app" && echo " ✅ ✅ ✅ opened $1 ✅ ✅ ✅ "
 			sleep 1
 		else
-			echo "okay, SKIPPED opening $1"
+			echo "⏭️ ⏭️ ⏭️ okay, SKIPPED opening $1 ⏭️ ⏭️ ⏭️"
 	fi
 
 	printf "\n====~====~====~====~====~====~====~====\n"
@@ -43,4 +56,5 @@ openApp "Microsoft Outlook" "Microsoft Outlook"
 openApp "Sublime Text" "Sublime Text"
 #openApp "__TODO__" "__TODO__"
 
+echo "Hello, STOP ~ $(date)"
 exit 0
