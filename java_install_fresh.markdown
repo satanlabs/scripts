@@ -44,7 +44,7 @@
 
      $ mkdir jdk
 ```
-6. Then in `jdk` folder, copy the extracted-jdk ( from step 3 ).
+6. Then in `jdk` folder, copy the extracted-jdk folder ( from step 3 ).
 ```
     $ cp -r /jdk/dir/folder/  /usr/lib/jdk/
 ```
