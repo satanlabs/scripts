@@ -168,9 +168,6 @@ $> df -h
 //list of storages
 $ lsblk
 
-// print all or part of environment
-$> printenv
-
 // find the home of apps , where to find the apps ( eg : you want to find where is java application )
 $ echo $PATH
 
@@ -196,13 +193,6 @@ $ wget -O custom.zip http://example.com/some.zip
 $ wget -O file_"$(date +%s)".html satanlabs.com
 $ echo `date`
 $ echo `whoami`
-
-// print/use env. variables in command
-#!/bin/bash
-STR="John Singh"
-echo $STR
-echo "hello from $STR"
-
 
 //change owner of a file/folder
 $ chown _some_username_ /dir/to/file/
@@ -269,6 +259,20 @@ $ ls -lah *
 //similarly to see 2nd level files : caution ⚠️ : this can be a deceiving view
 $ ls -lah */*
 
+
+// ENVIRONMENT variables section
+
+//set env. variables (linux/mac)
+$ export WHO_IS_SHAKTIMAN=gangadhar
+
+// print/use env. variables in command
+#!/bin/bash
+STR="John Singh"
+echo $STR
+echo "hello from $STR"
+
+// print all or part of environment
+$> printenv
 
 
 ~~
