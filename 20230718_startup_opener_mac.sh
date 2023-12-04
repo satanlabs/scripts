@@ -51,10 +51,11 @@ openApp "GitHub Desktop" "GitHub Desktop"
 openApp "Google Chrome" "Google Chrome"
 openApp "IntelliJ IDE community" "IntelliJ IDEA CE"
 openApp "Microsoft OneNote" "Microsoft OneNote"
-openApp "Microsoft Teams" "Microsoft Teams"
+openApp "Microsoft Teams" "Microsoft Teams classic"
 openApp "Microsoft Outlook" "Microsoft Outlook"
 openApp "Sublime Text" "Sublime Text"
-#openApp "__TODO__" "__TODO__"
+# openApp "Safari" "Safari"
+# openApp "__USER_FACING_NAME__" "__ACTUAL_APP_FILENAME_IN_MAC__"
 
 echo "Hello, STOP ~ $(date)"
 exit 0
