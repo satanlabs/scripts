@@ -20,7 +20,7 @@ current_local_datetime = time.strftime("%Y%m%d_%H%M%S", time.localtime())
 
 def callSaveExpenseApi(payload):
     print("callSaveExpenseApi() : START")
-    url = "https://backend.satanlabs.com/nexusx/price_tracker/expense/save?offset=0&from=admin-portal"
+    url = "http://localhost:7980/nexus/price_tracker/expense/save?offset=0&from=admin-portal"
 
     payloadInJsonString = json.dumps(payload)
     headers = {
@@ -111,7 +111,7 @@ def saveHouseRentData():
             print("saveHouseRentData() : ", item["date"], " ~ ", item["amount"])
             amount = item["amount"]
             dateAndTimeOfPurchase = item["date"] + " 09:00"
-            extraNotes = "for_ejipura_house\n\nfor the month of " + item["note"]
+            extraNotes = "for_ejipura_house\n\nfor the month of " + item["note"] + "\npaid by gaurav\nadded from splitwise"
             payload = {
                 "dateAndTimeOfPurchase": dateAndTimeOfPurchase,
                 "extraNotes": extraNotes,
@@ -137,6 +137,246 @@ def saveHouseRentData():
             print("saveHouseRentData() : ", "DONE for : ", item["date"])
             
 
-saveHouseRentData()
+def saveEjipuraCookData():
+    data = [
+        {
+            "date": "2023-10-07",
+            "amount": 5000,
+            "note": "Sep-2023"
+        },
+        {
+            "date": "2023-11-07",
+            "amount": 5000,
+            "note": "Oct-2023"
+        },
+        {
+            "date": "2023-12-07",
+            "amount": 5000,
+            "note": "Nov-2023"
+        },
+        {
+            "date": "2024-01-07",
+            "amount": 5000,
+            "note": "Dec-2023"
+        },
+        {
+            "date": "2024-02-07",
+            "amount": 5000,
+            "note": "Jan-2024"
+        },
+        {
+            "date": "2024-03-07",
+            "amount": 5000,
+            "note": "Feb-2024"
+        },
+        {
+            "date": "2024-04-07",
+            "amount": 5000,
+            "note": "Mar-2024"
+        },
+        {
+            "date": "2024-05-07",
+            "amount": 5000,
+            "note": "Apr-2024"
+        },
+        {
+            "date": "2024-06-07",
+            "amount": 5000,
+            "note": "May-2024"
+        },
+        {
+            "date": "2024-07-07",
+            "amount": 5000,
+            "note": "Jun-2024"
+        },
+        {
+            "date": "2024-08-07",
+            "amount": 5000,
+            "note": "Jul-2024"
+        },
+        {
+            "date": "2024-10-07",
+            "amount": 5500,
+            "note": "Sep-2024"
+        },
+        {
+            "date": "2024-11-07",
+            "amount": 5500,
+            "note": "Oct-2024"
+        }
+    ]
+    for item in data:
+            print("=======================")
+            print("saveEjipuraCookData() : ", item["date"], " ~ ", item["amount"])
+            amount = item["amount"]
+            dateAndTimeOfPurchase = item["date"] + " 09:00"
+            extraNotes = "for_ejipura_house\n\nfor the month of " + item["note"] + "\npaid by gaurav to mukesh\nadded from splitwise partially"
+            payload = {
+                "dateAndTimeOfPurchase": dateAndTimeOfPurchase,
+                "extraNotes": extraNotes,
+                "tags": "",
+                "payment": {
+                    "totalAmount": amount,
+                    "paymentInstrument": "CASH",
+                    "bank": None
+                },
+                "mode": "STORE_BOUGHT",
+                "storeId": 12,
+                "locationId": 37,
+                "items": [
+                    {
+                    "productId": 777,
+                    "quantity": "1",
+                    "amount": amount
+                    }
+                ]
+            }
+            print("saveEjipuraCookData() : payload = ", payload)
+            print("saveEjipuraCookData() : API response : ", callSaveExpenseApi(payload))
+            print("saveEjipuraCookData() : ", "DONE for : ", item["date"])
+
+def saveEjipuraRoomMaidAuntyData():
+    data = [
+        {
+            "date": "2024-01-07",
+            "amount": 2000,
+            "note": "Dec-2023"
+        },
+        {
+            "date": "2024-03-07",
+            "amount": 2000,
+            "note": "Feb-2024"
+        },
+        {
+            "date": "2024-04-07",
+            "amount": 2500,
+            "note": "Mar-2024"
+        },
+        {
+            "date": "2024-05-07",
+            "amount": 2500,
+            "note": "Apr-2024"
+        },
+        {
+            "date": "2024-06-07",
+            "amount": 2500,
+            "note": "May-2024"
+        },
+        {
+            "date": "2024-07-07",
+            "amount": 2500,
+            "note": "Jun-2024"
+        },
+        {
+            "date": "2024-08-07",
+            "amount": 2500,
+            "note": "Jul-2024"
+        },
+        {
+            "date": "2024-09-07",
+            "amount": 2500,
+            "note": "Aug-2024"
+        }
+    ]
+    for item in data:
+            print("=======================")
+            print("saveEjipuraRoomMaidAuntyData() : ", item["date"], " ~ ", item["amount"])
+            amount = item["amount"]
+            dateAndTimeOfPurchase = item["date"] + " 09:00"
+            extraNotes = "for_ejipura_house\n\nfor the month of " + item["note"] + "\npaid by gaurav to yamuna-aunty\nadded from splitwise partially"
+            payload = {
+                "dateAndTimeOfPurchase": dateAndTimeOfPurchase,
+                "extraNotes": extraNotes,
+                "tags": "",
+                "payment": {
+                    "totalAmount": amount,
+                    "paymentInstrument": "CASH",
+                    "bank": None
+                },
+                "mode": "STORE_BOUGHT",
+                "storeId": 12,
+                "locationId": 37,
+                "items": [
+                    {
+                    "productId": 505,
+                    "quantity": "1",
+                    "amount": amount
+                    }
+                ]
+            }
+            print("saveEjipuraRoomMaidAuntyData() : payload = ", payload)
+            print("saveEjipuraRoomMaidAuntyData() : API response : ", callSaveExpenseApi(payload))
+            print("saveEjipuraRoomMaidAuntyData() : ", "DONE for : ", item["date"])
 
 
+def saveElectrictyBillData():
+    data = [
+        {
+            "date": "2024-07-09",
+            "amount": 570,
+            "note": "June-2024"
+        },
+        {
+            "date": "2024-06-18",
+            "amount": 1148,
+            "note": "May-2024"
+        },
+        {
+            "date": "2024-05-26",
+            "amount": 1022,
+            "note": "April-2024"
+        },
+        {
+            "date": "2024-04-07",
+            "amount": 1404,
+            "note": "March-2024"
+        },
+        {
+            "date": "2024-02-10",
+            "amount": 1204,
+            "note": "January-2024"
+        },
+        {
+            "date": "2023-09-07",
+            "amount": 1988,
+            "note": "Aug-2023"
+        }
+    ]
+    for item in data:
+            print("=======================")
+            print("saveElectrictyBillData() : ", item["date"], " ~ ", item["amount"])
+            amount = item["amount"]
+            dateAndTimeOfPurchase = item["date"] + " 09:00"
+            extraNotes = "for_ejipura_house\n\nfor the month of " + item["note"] + "\npaid by gaurav\nadded from splitwise partially"
+            payload = {
+                "dateAndTimeOfPurchase": dateAndTimeOfPurchase,
+                "extraNotes": extraNotes,
+                "tags": "",
+                "payment": {
+                    "totalAmount": amount,
+                    "paymentInstrument": "CASH",
+                    "bank": None
+                },
+                "mode": "STORE_BOUGHT",
+                "storeId": 12,
+                "locationId": 37,
+                "items": [
+                    {
+                    "productId": 53,
+                    "quantity": "1",
+                    "amount": amount
+                    }
+                ]
+            }
+            print("saveElectrictyBillData() : payload = ", payload)
+            print("saveElectrictyBillData() : API response : ", callSaveExpenseApi(payload))
+            print("saveElectrictyBillData() : ", "DONE for : ", item["date"])
+
+
+# saveHouseRentData() - done 20241229_1200
+
+# saveEjipuraCookData() - done 20241229_1352
+
+# saveEjipuraRoomMaidAuntyData() - done 20241229_1404
+
+# saveElectrictyBillData() - done 20241229_1553
